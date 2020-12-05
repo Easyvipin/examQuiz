@@ -16,7 +16,7 @@ function Headers({setScreen}) {
           </div>
           <ul>
            <li>{dataState.examTitle}</li>
-           <Countdown date={Date.now() + 40 * 60 * 1000}>
+           <Countdown date={Date.now() + dataState.examDuration * 60 * 1000}>
            <Completionist />
          </Countdown>
           </ul>
