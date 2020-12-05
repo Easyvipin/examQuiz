@@ -1,0 +1,64 @@
+.question {
+  margin: 0px 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* question detail */
+  .question-det {
+    h3 {
+      text-decoration: underline;
+      font-family: $mainFamily;
+      color: $mainColor;
+    }
+    p {
+      font-family: $mainFamily;
+      margin-top: 100px;
+      text-align: center;
+    }
+  }
+  /* question options */
+  .question-option {
+    form {
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          margin-top: 10px;
+          width: 100%;
+          position: relative;
+          span {
+            display: inline-block;
+            width: 25px;
+            padding: 2px 2px;
+            text-align: center;
+            margin: 0px 10px;
+            background: $mainColor;
+            font-size: 20px;
+            color: $optionBg;
+            font-family: $mainFamily;
+            border-radius: 50%;
+          }
+        }
+      }
+      label {
+        display: inline-block;
+        width: 90%;
+        padding: 10px;
+        border: solid 2px $selectOpt;
+        transition: all 0.3s;
+        font-family: $robotoFamily;
+        font-size: 20px;
+      }
+      input[type="radio"] {
+        display: none;
+      }
+      input[type="radio"]:checked + label {
+        background-color: $selectOpt;
+      }
+      @include responsive(240px, 1014px) {
+        label {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

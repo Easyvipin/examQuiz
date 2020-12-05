@@ -1,0 +1,77 @@
+nav {
+  margin: 2px 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .top-side {
+  }
+  h2 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 20px;
+    color: $mainFont;
+  }
+  ul {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    li:last-child {
+      list-style: none;
+      background-color: $mainColor;
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      padding: 4px 20px;
+      border-radius: 5px;
+    }
+    li {
+      margin: 0px 20px;
+      font-family: "Merriweather Sans", Regular;
+      color: $headerFont;
+      font-size: 20px;
+    }
+  }
+}
+
+/* sections  */
+.sections {
+  margin: 2px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.active-section:first-of-type {
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 20px 0px 0px 20px;
+  margin-left: 0px;
+  padding-right: 30px;
+  background-color: #2f6690;
+  color: white;
+}
+.active-section:first-of-type:hover {
+  background-color: #2f6690;
+}
+.section-button {
+  margin-left: -30px;
+  border: 2px solid $headerFont;
+  width: 150px;
+  min-height: 2.5rem;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding-right: 30px;
+  color: $headerFont;
+  font-size: 12px;
+  font-family: $mainFamily;
+  background-color: $optionBg;
+  outline: none;
+}
+.section-button:last-of-type {
+  border-radius: 20px;
+}
+.section-button:hover {
+  background-color: rgb(246, 214, 173);
+}

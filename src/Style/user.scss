@@ -1,0 +1,101 @@
+/* profile  */
+.profile {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 50px;
+  }
+  h4 {
+    display: inline-block;
+    color: black;
+    font-family: "Noto Sans", sans-serif;
+    color: 15px;
+  }
+}
+/* staticts */
+.stats {
+  padding: 0;
+  li {
+    font-family: $robotoFamily;
+    font-size: 17px;
+    list-style: none;
+    margin-top: 20px;
+  }
+  li:first-of-type {
+    margin-top: 5px;
+  }
+  li span {
+    margin-right: 10px;
+  }
+  .order {
+    padding: 2px 8px;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: white;
+  }
+  .stat-visit {
+    background-color: black;
+  }
+  .stat-undone {
+    background-color: rgb(105, 3, 3);
+  }
+  .stat-done {
+    background-color: green;
+  }
+  .stat-mark {
+    background-color: rgb(64, 187, 228);
+  }
+  .stat-review {
+    background-color: rgb(66, 91, 66);
+  }
+
+  /* section details */
+}
+.section-det {
+  h2 {
+    text-align: center;
+    color: black;
+    font-family: $mainFamily;
+    background-color: #62b6cb;
+    font-size: 14px;
+    padding: 10px;
+  }
+  h5 {
+    font-family: $robotoFamily;
+    size: 13px;
+  }
+  button {
+    display: inline-block;
+    margin: 0px 6px;
+    padding: 2px 8px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #62b6cb;
+    color: white;
+    font-family: $robotoFamily;
+    outline: none;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  .active {
+    background-color: black;
+  }
+}
+.btn {
+  position: absolute;
+  bottom: 20px;
+  width: 80%;
+  left: 10%;
+  margin: auto;
+  padding: 10px 20px;
+  font-family: $robotoFamily;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid #62b6cb;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #62b6cb;
+  background-color: white;
+}

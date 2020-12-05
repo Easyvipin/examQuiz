@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  bottom: 0;
+  background-color: $headerFont;
+  width: 100%;
+  button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-family: $robotoFamily;
+    font-size: 20px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+  }
+  .question-btn {
+    background-color: white;
+    color: #62b6cb;
+    border-radius: 8px;
+  }
+  .save-btn {
+    background-color: #62b6cb;
+    color: white;
+    border-radius: 8px;
+  }
+}

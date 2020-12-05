@@ -1,0 +1,62 @@
+@import "./allFont.scss";
+@import "./Varaiables.scss";
+@import "./allmixins.scss";
+@import "./responsiveMixin.scss";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.App {
+  position: relative;
+  @include appgrid();
+  @include responsive(240px, 1014px) {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* mainbar style  */
+
+.mainBar {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  justify-content: space-between;
+  /* header and section design */
+  @import "./Headers.scss";
+  @import "./question.scss";
+  @import "./Footer.scss";
+  @include responsive(240px, 1014px) {
+    label {
+      width: 50%;
+    }
+    footer {
+      display: block;
+      height: 180px;
+      padding: 10px 10px;
+      button {
+        margin-top: 20px;
+      }
+      div {
+        position: relative;
+      }
+    }
+  }
+}
+aside {
+  position: relative;
+  padding: 15px 15px;
+  @import "./user.scss";
+  @include responsive(240px, 1014px) {
+    .btn {
+      position: relative;
+      margin-top: 40px;
+    }
+  }
+  border-left: 2px solid#62b6cb;
+}
